@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: green;
+    font-size: 40px;
+    text-align: left;
+}
+
+h2{
+    color: green;
+
+}
+.Ford{
+    width: 100%;
+    color: black;
+    justify-content: left;
+}
+
+article{
+    width: 100%;
+    color: black;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Henry{
+    width: 100%;
+    color: black;
+    justify-content: left;
+}
+img{
+    width: 100%;
+}
+
+ul{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type: none;
+    gap: 10px;
+}
+
+li{
+    margin: auto;
+    padding: 10px;
+}
+
+p{
+    color: black;
+    justify-content: left;
+}
+
+footer{
+    margin: auto;
+    color: green;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "h h "
+                        "n n"
+                        "ar as"
+                        "f f";
+                        max-width: 1000px;
+                        margin: auto;
+                        
+
+}
+header {
+    grid-area: h;
+    background-color: rgb(255, 255, 255);
+
+}
+nav {
+    grid-area: n;
+    background-color: rgb(9, 109, 0);
+
+}
+
+article {
+    grid-area: ar;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside {
+    grid-area: as;
+
+}    
+footer {
+    grid-area: f;
+}
+
+
+@media screen and (max-width: 800px){
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "h h"
+                            "n n"
+                            "ar as"
+                            "f f";
+    }
+
+   ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    article{
+        width: 100%;
+        color: black;
+        justify-content: left;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                            "n"
+                            "ar"
+                            "as"
+                            "f";
+    }
+
+   ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    article{
+        width: 100%;
+        color: black;
+        justify-content: left;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
